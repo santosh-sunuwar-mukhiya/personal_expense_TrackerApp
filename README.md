@@ -1,17 +1,49 @@
-# React + Vite
+# Personal Expense App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React expense tracker app built with Vite, React Router, Tailwind CSS, and icon libraries.
 
-Currently, two official plugins are available:
+## What is used in this project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite for development and build tooling
+- React Router DOM for page routing
+- Tailwind CSS for styling
+- Lucide React and React Icons for icon components
+- ESLint for linting
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/App.jsx` - application routes
+- `src/pages/Login.jsx` - login page
+- `src/pages/Dashboard.jsx` - main dashboard page
+- `src/components/ExpenseForm.jsx` - expense entry form
+- `src/components/ExpenseTable.jsx` - expense listing table
+- `src/components/Cards.jsx` - summary cards
+- `src/index.css` - global styles
+- `src/main.jsx` - app bootstrap
 
-## Expanding the ESLint configuration
+## Setup and run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# personal_expense_TrackerApp
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start development server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Available scripts
+
+- `npm run dev` - start Vite development server
+- `npm run build` - build production files
+- `npm run lint` - run ESLint checks
+- `npm run preview` - preview the production build
+
+## Notes
+
+This app includes a login route and a dashboard route, with client-side navigation implemented using React Router.
